@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
 
   onClick(){
    return dataCheck()?
-    Navigator.pushNamed(context, Routes.allowSound):null;
+    Navigator.pushNamed(context, AppRoutes.allowSound):null;
   }
 
   @override
