@@ -1,0 +1,40 @@
+{
+  "country": [
+    {
+      "name": "Afghanistan",
+      "countryCode": "004"
+    },
+    {
+      "name": "Argentina",
+      "countryCode": "032"
+    },
+    {
+      "name": "Australia",
+      "countryCode": "036"
+    },
+    {
+      "name": "Brazil",
+      "countryCode": "076"
+    },
+    {
+      "name": "Canada",
+      "countryCode": "124"
+    },
+    {
+      "name": "China",
+      "countryCode": "156"
+    },
+    {
+      "name": "Germany",
+      "countryCode": "276"
+    },
+    {
+      "name": "India",
+      "countryCode": "91"
+    },
+    {
+      "name": "New Zealand",
+      "countryCode": "554"
+    }
+  ]
+}
