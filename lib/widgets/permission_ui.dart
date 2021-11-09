@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Permission extends StatelessWidget {
+class PermissionUI extends StatelessWidget {
   final String name;
   final String description;
   final String imageSrc;
   final VoidCallback onAllowing;
   final VoidCallback onCancel;
 
-  const Permission({Key? key,required this.name,required this.description,required this.imageSrc,required this.onAllowing,required this.onCancel}) : super(key: key);
+  const PermissionUI({Key? key,required this.name,required this.description,required this.imageSrc,required this.onAllowing,required this.onCancel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +27,9 @@ class Permission extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                          borderRadius: BorderRadius.circular(15.0),
                       ),
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.close,
                       color: Colors.blue,
                     ),
@@ -48,26 +48,26 @@ class Permission extends StatelessWidget {
                           backgroundImage:AssetImage(imageSrc)
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 50.0,
                         width: double.infinity,
                       ),
                       Text(name,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w800,
                           fontSize: 25.0,
-                        ),
+                        ), 
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 6.0,
                       ),
                       Text(description,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 18.0,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40.0,
                       ),
                       SizedBox(
@@ -75,7 +75,7 @@ class Permission extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: onAllowing, 
-                          child: Text('Allow access',
+                          child: const Text('Allow access',
                           style: TextStyle(
                             fontSize: 18.0,
                             )
