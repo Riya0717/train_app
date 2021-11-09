@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:train_app/screens/login_screens/account_Info.dart';
+import 'package:train_app/screens/login_screens/info.dart';
 import 'package:train_app/screens/login_screens/permissions_screens/camera.dart';
 import 'package:train_app/screens/login_screens/permissions_screens/sound.dart';
 
@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.loginRoute,
       routes:{
-        "/": (context) => Login(),
-        AppRoutes.loginRoute:(context)=> Login(),
-        AppRoutes.allowSound:(context)=> AllowSound(),
-        AppRoutes.allowCamera:(context)=> AllowCamera(),
-        AppRoutes.accountInfo:(context)=> AccountInfo(),
+        "/": (context) =>const Login(),
+        AppRoutes.loginRoute:(context)=>const Login(),
+        AppRoutes.allowSound:(context)=>const AllowSound(),
+        AppRoutes.allowCamera:(context)=>const AllowCamera(),
+        AppRoutes.accountInfo:(context)=>const Info(),
       }
     );
   }
