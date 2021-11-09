@@ -105,7 +105,7 @@ class _LoginState extends State<Login> {
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Colors.black12,
+                                        color: Colors.blue,
                                       ),
                                       borderRadius: BorderRadius.vertical(
                                           top: Radius.circular(8.0),
@@ -125,7 +125,7 @@ class _LoginState extends State<Login> {
                                   items: CountryModel.items
                                       .map<DropdownMenuItem<String>>((obj) {
                                     return DropdownMenuItem<String>(
-                                      value: obj.name,
+                                      value: obj.countryCode,
                                       child: Text(
                                           "${obj.name} (+${obj.countryCode})"),
                                     );
@@ -151,7 +151,7 @@ class _LoginState extends State<Login> {
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                      color: Colors.black12,
+                                      color: Colors.blue,
                                     ),
                                     borderRadius: BorderRadius.vertical(
                                         top: Radius.zero,
