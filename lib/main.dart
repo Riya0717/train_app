@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:train_app/screens/login_screens/info.dart';
+import 'package:train_app/screens/login_screens/otp.dart';
 import 'package:train_app/screens/login_screens/permissions_screens/camera.dart';
 import 'package:train_app/screens/login_screens/permissions_screens/sound.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.allowSound:(context)=>const AllowSound(),
         AppRoutes.allowCamera:(context)=>const AllowCamera(),
         AppRoutes.accountInfo:(context)=>const Info(),
+        AppRoutes.otp :(context)=>const OTP(),
       }
     );
   }
